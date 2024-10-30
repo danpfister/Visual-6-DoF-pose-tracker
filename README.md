@@ -1,3 +1,16 @@
+# INSTRUCTIONS
+run
+
+```docker build -t <new-image-name>```
+
+```docker run -it --name ros_kinetic_1 -p 6080:80 -p 5900:5900 --device=/dev/video0:/dev/video0 -v <this-repo>:/mnt/ <new-image-name>```
+
+Connect on VNC Viewer to `localhost:5900`.
+
+Inside the terminal (inside VNC) run
+
+```cd /mnt/src && pip install -r requirements.txt```
+
 # Note
 This repository is not maintained now. For updates see https://github.com/biorobotics/cmu-dodecapen
 
