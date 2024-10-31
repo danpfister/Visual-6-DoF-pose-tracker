@@ -24,7 +24,7 @@ for fname in images:
         objpoints.append(objp)
         corners2 = cv.cornerSubPix(gray,corners, (12,12), (-1,-1), criteria)
         imgpoints.append(corners)
-        Draw and display the corners
+        # Draw and display the corners
         cv.drawChessboardCorners(img, (9,6), corners2, ret)
         cv.imshow('img', img)
         cv.waitKey(0)
