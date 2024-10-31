@@ -16,7 +16,7 @@ Connect on VNC Viewer to `localhost:5900`.
 
 Inside the terminal (inside VNC) run
 
-```cd /mnt/ && pip install -r ./src/requirements.txt```
+```cd /mnt/ && pip install -r requirements.txt```
 
 Test camera with
 
