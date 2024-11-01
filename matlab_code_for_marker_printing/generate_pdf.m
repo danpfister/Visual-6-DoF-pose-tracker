@@ -2,8 +2,8 @@ clc ;
 clear;
 close all;
 n = 5; % no of sides of pentagon
-s = 2.0; % cm length of side of polygon
-marker_size = 1.778;
+s = 1.2; % cm length of side of polygon
+marker_size = 1.0668;
 cur_dir = pwd;
 
 rad_circum_circ = s/(2*sin(pi/n));

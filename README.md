@@ -1,3 +1,31 @@
+# INSTRUCTIONS
+
+CURRENTLY ONLY WORKS FOR LINUX!
+
+inside this folder, run:
+
+```docker build -t ros_kinetic_img .```
+
+then (first time)
+
+```docker run -it --name ros_kinetic_1 -p 6080:80 -p 5900:5900 --device=/dev/video??:/dev/video0 -v $PWD:/mnt/ ros_kinetic_img```
+
+otherwise
+
+```docker start -i ros_kinetic_1```
+
+where ?? is the index of the webcam (find by running ls /dev/video* with webcam plugged in and without).
+
+Connect on VNC Viewer to `localhost:5900`.
+
+Inside the terminal (inside VNC) run
+
+```cd /mnt/ && pip install -r requirements.txt```
+
+Test camera with
+
+```python camera_test.py```.
+
 # Note
 This repository is not maintained now. For updates see https://github.com/biorobotics/cmu-dodecapen
 
